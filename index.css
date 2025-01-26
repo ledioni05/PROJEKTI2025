@@ -1,28 +1,25 @@
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  line-height: 28px;
-  color: #6a6a6a;
-  font-size: 32px;
- }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2e626b;
+  color: white;
+  height: auto;
+  overflow-y: auto; 
+}
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f29000; 
-  padding: 20px 20px;
-  color: white;
+  background-color: #f29000;
+  padding: 30px 35px;
 }
 
-.logo {
-  font-size: 40px;
+.logo a {
+  font-size: 37px;
   font-weight: bold;
-  color: white;
   text-decoration: none;
-}
-
-.logo span {
   color: white;
 }
 
@@ -34,7 +31,7 @@ body {
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .nav-links a {
@@ -42,109 +39,277 @@ body {
   color: black;
   font-size: 18px;
   font-weight: bold;
-  position: relative;
-}
-
-.nav-links a:hover {
-  color: white;
-}
-
-.nav-links a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 3px;
-  background: white;
-  transition: width 0.3s;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.icons {
-  display: flex;
-  gap: 20px;
 }
 
 .icons img {
   width: 24px;
   height: 24px;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #2e626b; /* Ngjyra e sfondit */
-  color: white;
+  margin-left: 15px;
 }
 
 .divi2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding:140px;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 7px auto;
+  background-color: #ffffff20;
+  border-radius: 10px;
 }
 
-.divi2 .text-content {
+.text-content {
   max-width: 50%;
+  text-align: left;
 }
 
-.divi2 .text-content h1 {
+.text-content h1 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.divi2 .text-content p {
+.text-content p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
   color: #d1d1d1;
 }
 
-.divi2 .buttons {
+.buttons {
   display: flex;
   gap: 15px;
 }
 
-.divi2 .buttons .btn {
+.buttons .btn {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   border: 2px solid white;
   border-radius: 30px;
   text-decoration: none;
-  text-align: center;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.divi2 .buttons .btn-primary {
+.buttons .btn-primary {
   background-color: #fbc02d;
-  color: #000;
-  border-color: #fbc02d;
+  color: black;
 }
 
-.divi2 .buttons .btn-primary:hover {
+.buttons .btn-primary:hover {
   background-color: #ffd740;
-  color: #000;
 }
 
-.divi2 .buttons .btn-secondary {
+.buttons .btn-secondary {
   background-color: transparent;
   color: white;
 }
 
-.divi2 .buttons .btn-secondary:hover {
+.buttons .btn-secondary:hover {
   background-color: white;
   color: #2e626b;
 }
 
-
-.divi2 .image-content img {
+.image-content img {
   max-width: 400px;
   height: auto;
   border-radius: 10px;
+}
+/* Seksioni kryesor - divi3 */
+.divi3 {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: flex-start;
+  padding: 70px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #f5f8f7;
+  color: #333; 
+}
+
+
+.divi3 .description {
+  flex: 1;
+  text-align: left; 
+  margin-right: 30px; 
+}
+
+.divi3 .description h1 {
+  font-size: 36px; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.divi3 .description p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666; 
+}
+
+.divi3 .description .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1c1c1c;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.divi3 .description .btn:hover {
+  background-color: #333;
+}
+
+.divi3 .products {
+  display: right;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+.divi3 .products .product-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 1;
+  transition: transform 0.3s ease-in-out;
+  max-width: 350px; 
+}
+
+.divi3 .products .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.divi3 .products .product-card img {
+  max-width: 120px; 
+  height: auto;
+  margin-right: 15px; 
+  border-radius: 5px;
+}
+
+.divi3 .products .product-card .product-info {
+  text-align: left;
+}
+
+.divi3 .products .product-card .product-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.divi3 .products .product-card .product-info p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #2e626b;
+  line-height: 1.8;
+}
+
+.footer .right {
+  flex: 1;
+  min-width: 150px;
+  margin-top: 40px; 
+}
+.footer .middle {
+  flex: 1;
+  min-width: 150px;
+  margin-top: 40px; 
+  padding-left:20px;
+}
+
+.footer .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer .left {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer .left h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2e626b;
+  margin-bottom: 15px;
+}
+
+.footer .left p {
+  margin-bottom: 20px;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #d9e6e6;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #2e626b;
+  font-size: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  background-color: #2e626b;
+  color: #ffffff;
+}
+
+.footer .middle, .footer .right {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer ul {
+  list-style-type: square;
+  padding: 0;
+  margin: 20px;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #2e626b;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #f29000;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  color: #6a6a6a;
 }
